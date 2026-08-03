@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       META & SEO
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"   content="Amadi Navodya – Software Developer & IT Student. Portfolio showcasing projects in web development,Mobile Development." />
+  <meta name="keywords"      content="software developer, web developer, IT student, portfolio, HTML CSS JavaScript PHP Java WordPress" />
+  <meta name="author"        content="Amadi Nethsarani" />
+  <meta property="og:title"       content="Amadi Navodya | Developer Portfolio" />
+  <meta property="og:description" content="Full-stack developer & IT student building elegant digital experiences." />
+  <meta property="og:type"        content="website" />
+  <title>Amadi Navodya | Developer Portfolio</title>
+
+  <!-- ============================================================
+       FONTS  (Syne display + DM Mono body)
+  ============================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- ============================================================
+       FONT AWESOME ICONS
+  ============================================================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- ============================================================
+       MAIN STYLESHEET
+  ============================================================ -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CUSTOM CURSOR
+  ============================================================ -->
+  <div class="cursor-dot"   id="cursorDot"></div>
+  <div class="cursor-ring"  id="cursorRing"></div>
+
+  <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">AMADI</span>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       STICKY NAVIGATION
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-bracket">&lt;</span>AMADI<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about"           class="nav-link" data-section="about">About</a>
+      <a href="#skills"          class="nav-link" data-section="skills">Skills</a>
+      <a href="#projects"        class="nav-link" data-section="projects">Projects</a>
+      <a href="#timeline"        class="nav-link" data-section="timeline">Education</a>
+      <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+      <a href="#contact"         class="nav-link" data-section="contact">Contact</a>
+    </nav>
+
+    <a href="Amadi Resume new.pdf" download class="btn btn-outline btn-sm">
+      <i class="fa fa-download"></i> Resume
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Animated grid background -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Profile photo -->
+      <div class="hero-image-wrap reveal-left">
+        <div class="hero-image-ring"></div>
+        <div class="hero-image-ring hero-image-ring--2"></div>
+        <img src="images/amadi.png"
+             alt="Amadi Navodya profile photo"
+             class="hero-image"
+             id="heroAvatar" />
+        <div class="hero-badge">
+          <span class="status-dot"></span>  Available for Internship
+        </div>
+      </div>
+
+      <div class="hero-text reveal-right">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h2 class="hero-name">Amadi <span class="gradient-text">Navodya</span></h2>
+
+        <!-- Typing animation container -->
+        <h2 class="hero-role">
+          I'm a <span class="typing-text" id="typingText"></span><span class="cursor-blink">|</span>
+        </h2>
+
+        <p class="hero-desc">
+           Final year Information Technology undergraduate at the university of ruhuna. 
+           Strong interest in full stack web development and building high performance mobile applications 
+           with focus on technical excellence and elegant user experience.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-glass">
+            <i class="fa fa-envelope"></i> Contact Me
+          </a>
+        </div>
+
+        <!-- Social links -->
+        <div class="hero-stats">
+          <a href="www.linkedin.com/in/amadinethsarani" class="hero-social-card" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/Amadi611" class="hero-social-card" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:amadinethsarani611@gmail.com" class="hero-social-card" aria-label="Email me">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+      <span class="scroll-cue-line"></span>
+      <i class="fa fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// about_me</span>
+        <h2 class="section-title">Who I <span class="gradient-text">Am</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Terminal-style bio card -->
+        <div class="about-terminal reveal-left">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">amadinavodya@portfolio:~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="cmd-prompt">$</span> <span class="cmd">cat about.json</span></p>
+            <pre class="json-output">{
+  <span class="json-key">"name"</span>: <span class="json-str">"Amadi Navodya"</span>,
+  <span class="json-key">"age"</span>: <span class="json-num">23</span>,
+  <span class="json-key">"location"</span>: <span class="json-str">"Bentota, Sri Lanka"</span>,
+  <span class="json-key">"degree"</span>: <span class="json-str">"Bachelor of Information Technology (Hons)"</span>,
+  <span class="json-key">"university"</span>: <span class="json-str">"University of Ruhuna"</span>,
+  <span class="json-key">"gpa"</span>: <span class="json-num">3.0</span>,
+  <span class="json-key">"interests"</span>: [
+    <span class="json-str">"Full-Stack Development"</span>,
+    <span class="json-str">"Frontend Development"</span>,
+    <span class="json-str">"Backend Development"</span>,
+    <span class="json-str">"Android App Development"</span>,
+    <span class="json-str">"Software QA & Testing"</span>,
+    <span class="json-str">"UI/UX Design"</span>,
+    <span class="json-str">"Cloud Computing"</span>,
+    <span class="json-str">"Open Source"</span>
+  ],
+  <span class="json-key">"coffee_per_day"</span>: <span class="json-num">3</span>
+}</pre>
+            <p><span class="cmd-prompt">$</span> <span class="cursor-blink-green">█</span></p>
+          </div>
+        </div>
+
+        <!-- Right: Text bio -->
+        <div class="about-content reveal-right">
+          <h3>Building the <span class="gradient-text">future</span>, one commit at a time.</h3>
+          <p>I am a final-year Bachelor of Information Technology undergraduate at the
+            University of Ruhuna with a strong interest in Full-Stack Web Development,
+            Android Application Development, and Software Quality Assurance (QA).
+            I enjoy transforming ideas into practical, user-friendly applications while
+            continuously improving my technical and problem-solving skills.
+          </p>  
+
+          <p>Throughout my academic journey, I have developed several web and mobile
+             applications using modern technologies such as HTML, CSS, JavaScript, PHP,
+             Java, Firebase, and MySQL. I enjoy learning new technologies, collaborating
+             on projects, and creating software that delivers meaningful user experiences.
+             My goal is to begin my career as a Software Engineer or QA Engineer while
+             continuously expanding my knowledge and professional experience.
+          </p>
+
+          <!-- Key facts grid -->
+          <div class="about-facts">
+            <div class="fact-item">
+              <i class="fa fa-graduation-cap"></i>
+              <span>IT Undergraduate — 2027</span>
+            </div>
+            <div class="fact-item">
+              <i class="fa fa-map-marker-alt"></i>
+              <span>Bentota, Sri Lanka</span>
+            </div>
+            <div class="fact-item">
+              <i class="fa fa-language"></i>
+              <span>Sinhala, English</span>
+            </div>
+            <div class="fact-item">
+              <i class="fa fa-heart"></i>
+              <span>Music</span>
+            </div>
+          </div>
+
+          <a href="Amadi Resume new.pdf" download class="btn btn-primary">
+            <i class="fa fa-download"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  ============================================================ -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// tech_stack</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skills-category reveal-up" style="--delay:0.1s">
+          <h3 class="skills-cat-title"><i class="fa fa-palette"></i> Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="92">
+              <div class="skill-info">
+                <span>HTML/ CSS</span><span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="75">
+              <div class="skill-info">
+                <span>JavaScript</span><span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <div class="skill-info">
+                <span>Bootstrap</span><span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="40">
+              <div class="skill-info">
+                <span>React.js</span><span class="skill-pct">40%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>Responsive web Design</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skills-category reveal-up" style="--delay:0.2s">
+          <h3 class="skills-cat-title"><i class="fa fa-server"></i> Backend</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>PHP / Laravel</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Node.js / Express.js</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>Java</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Firebase</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+             
+            <div class="skill-item" data-level="58">
+              <div class="skill-info">
+                <span>REST API</span><span class="skill-pct">58%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skills-category reveal-up" style="--delay:0.3s">
+          <h3 class="skills-cat-title"><i class="fa fa-database"></i> Database</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>MySQL</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Firebase</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+             
+            <div class="skill-item" data-level="72">
+              <div class="skill-info">
+                <span>Real time Database</span><span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Programming Language -->
+        <div class="skills-category reveal-up" style="--delay:0.3s">
+          <h3 class="skills-cat-title"><i class="fa fa-code"></i> Programming Language</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>C</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Java</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>PHP</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <div class="skill-info">
+                <span>VB.NET</span><span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>OOP</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="52">
+              <div class="skill-info">
+                <span>DSA</span><span class="skill-pct">52%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Software QA & tools -->
+        <div class="skills-category reveal-up" style="--delay:0.4s">
+          <h3 class="skills-cat-title"><i class="fa fa-tools"></i> Software QA &amp; tools</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>Manual Testing</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="50">
+              <div class="skill-info">
+                <span>Automation Testing</span><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="62">
+              <div class="skill-info">
+                <span>Test Case Design</span><span class="skill-pct">62%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="52">
+              <div class="skill-info">
+                <span>Bug Reporting</span><span class="skill-pct">52%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>SDLC & STLS</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Networking -->
+        <div class="skills-category reveal-up" style="--delay:0.3s">
+          <h3 class="skills-cat-title"><i class="fa fa-network-wired"></i> Networking</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Cisco Packet Tracer</span><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Network Configuration</span><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="52">
+              <div class="skill-info">
+                <span>TCP/IP Fundamentals</span><span class="skill-pct">52%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CMS & E-commerce -->
+        <div class="skills-category reveal-up" style="--delay:0.3s">
+          <h3 class="skills-cat-title"><i class="fa fa-database"></i> CMS & E-commerce</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>WordPress</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>WooCommerce</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="62">
+              <div class="skill-info">
+                <span>Elementor</span><span class="skill-pct">62%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="skills-category reveal-up" style="--delay:0.3s">
+          <h3 class="skills-cat-title"><i class="fa fa-database"></i> Tools & Others</h3>
+          <div class="skill-bars">
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Git & GitHub</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <div class="skill-info">
+                <span>Android Studio</span><span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <div class="skill-info">
+                <span>Figma</span><span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="50">
+              <div class="skill-info">
+                <span>PhotoShop</span><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="50">
+              <div class="skill-info">
+                <span>Orange</span><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+            <div class="skill-item" data-level="50">
+              <div class="skill-info">
+                <span>KNIME</span><span class="skill-pct">50%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tech icon pills -->
+      <div class="tech-pills reveal-up">
+        <div class="tech-pills-row">
+          <span class="tech-pill" style="--pill-color:#e34f26; --pill-accent:#ff7a1a; --pill-hover-bg:rgba(255,122,26,.12);"><i class="fab fa-html5"></i> HTML5</span>
+          <span class="tech-pill" style="--pill-color:#1572b6; --pill-accent:#33a7ff; --pill-hover-bg:rgba(51,167,255,.12);"><i class="fab fa-css3-alt"></i> CSS3</span>
+          <span class="tech-pill" style="--pill-color:#f0db4f; --pill-accent:#ffe66d; --pill-hover-bg:rgba(255,230,109,.12);"><i class="fab fa-js"></i> JS</span>
+          <span class="tech-pill" style="--pill-color:#61dafb; --pill-accent:#7dd3fc; --pill-hover-bg:rgba(125,211,252,.12);"><i class="fab fa-react"></i> React</span>
+          <span class="tech-pill" style="--pill-color:#777bb3; --pill-accent:#a78bfa; --pill-hover-bg:rgba(167,139,250,.12);"><i class="fab fa-php"></i> PHP</span>
+          <span class="tech-pill" style="--pill-color:#f89820; --pill-accent:#fbbf24; --pill-hover-bg:rgba(251,191,36,.12);"><i class="fa fa-coffee"></i> Java</span>
+        </div>
+        <div class="tech-pills-row">
+          <span class="tech-pill" style="--pill-color:#68a063; --pill-accent:#86efac; --pill-hover-bg:rgba(134,239,172,.12);"><i class="fab fa-node-js"></i> Node</span>
+          <span class="tech-pill" style="--pill-color:#f05033; --pill-accent:#fb923c; --pill-hover-bg:rgba(251,146,60,.12);"><i class="fab fa-git-alt"></i> Git</span>
+          <span class="tech-pill" style="--pill-color:#21759b; --pill-accent:#38bdf8; --pill-hover-bg:rgba(56,189,248,.12);"><i class="fab fa-wordpress"></i> WordPress</span>
+          <span class="tech-pill" style="--pill-color:#31a8ff; --pill-accent:#60a5fa; --pill-hover-bg:rgba(96,165,250,.12);"><i class="fa fa-image"></i> Photoshop</span>
+          <span class="tech-pill" style="--pill-color:#5c2d91; --pill-accent:#8b5cf6; --pill-hover-bg:rgba(139,92,246,.12);"><i class="fa fa-code"></i> VB.NET</span>
+          <span class="tech-pill" style="--pill-color:#f24e1e; --pill-accent:#fb923c; --pill-hover-bg:rgba(251,146,60,.12);"><i class="fab fa-figma"></i> Figma</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// featured_work</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <!-- Projects grid -->
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal-up" data-category="web" style="--delay:0.05s">
+          <div class="project-img-wrap">
+            <div class="project-placeholder" style="--c1:#7c3aed;--c2:#06b6d4">
+              <img src="images/ unibizhub (1).png" alt="UNIBIZHUB screenshot" class="project-image" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Amadi611/unibizhub-web.git" class="btn btn-sm btn-glass" aria-label="GitHub repo">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3>UNIBIZHUB - Entrepreneur Online Business Platform</h3>
+            <p>Developed a web-based marketplace platform for University of Ruhuna students to create digital storefronts, manage products, and connect with customers.
+               Implemented secure user authentication, responsive interfaces, and MySQL database integration.</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal-up" data-category="api" style="--delay:0.1s">
+          <div class="project-img-wrap">
+            <div class="project-placeholder" style="--c1:#0891b2;--c2:#7c3aed">
+              <img src="images/Azuar Horizon.jpg" alt="Azure Horizon screenshot" class="project-image" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Amadi611/azure_horizonRes_Mob.git" class="btn btn-sm btn-glass"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Android Studio</span>
+              <span class="tag">Java</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Material Design</span>
+
+            </div>
+            <h3>Azure Horizon Resort - Hotel Booking App</h3>
+            <p>Developed a native Android application for hotel room booking with user authentication, room reservations,
+               booking cancellation, and Firebase Realtime Database integration for real-time data management.</p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal-up" data-category="ml" style="--delay:0.15s">
+          <div class="project-img-wrap">
+            <div class="project-placeholder" style="--c1:#f59e0b;--c2:#7c3aed">
+              <img src="images/summer style.png" alt="Summer Style screenshot" class="project-image" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Amadi611" class="btn btn-sm btn-glass"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">WooCommerce</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">XAMPP</span>
+            </div>
+            <h3>Summer Style Clothing Store</h3>
+            <p>Designed and developed a fully functional e-commerce website using WordPress and WooCommerce with product management,
+               shopping cart, checkout, and order management features.</p>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal-up" data-category="web" style="--delay:0.2s">
+          <div class="project-img-wrap">
+            <div class="project-placeholder" style="--c1:#06b6d4;--c2:#10b981">
+              <img src="images/Gizmo.png" alt="Gizmo Technology screenshot" class="project-image" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Amadi611/sample-ecommerce-GizmoX.git" class="btn btn-sm btn-glass"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3>Gizmo Technology Device Store</h3>
+            <p>Built a full-stack e-commerce platform for technology products featuring user authentication, 
+              shopping cart, checkout process, order management, and role-based access control.</p>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal-up" data-category="mobile" style="--delay:0.25s">
+          <div class="project-img-wrap">
+            <div class="project-placeholder" style="--c1:#ec4899;--c2:#7c3aed">
+              <img src="images/touarism.png" alt="Sri Lanka Tourism screenshot" class="project-image" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://tourism-one-kappa.vercel.app" class="btn btn-sm btn-glass"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3> Sri Lanka Tourism Management System</h3>
+            <p>Developed a tourism management website with an admin dashboard for creating, 
+              updating, and managing tour packages, backed by a MySQL database.</p>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal-up" data-category="ml" style="--delay:0.3s">
+          <div class="project-img-wrap">
+            <div class="project-placeholder" style="--c1:#10b981;--c2:#0891b2">
+              <img src="images/e-loyalty.png" alt="E-Loyalty research screenshot" class="project-image" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;display:block;" />
+            </div>
+            <div class="project-overlay">
+              <a href="https://github.com/Amadi611" class="btn btn-sm btn-glass"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3> An Integrated Framework for Enhancing E-Loyalty through Website Quality, Trust, and Customer Satisfaction in Sri Lankan E-Commerce</h3>
+            <p>Conducting a final-year research project to develop an integrated framework that enhances customer e-loyalty by analyzing website quality, customer trust, and satisfaction in Sri Lankan e-commerce platforms. The study includes literature review, data collection, 
+              statistical analysis, and framework development to improve user retention and online shopping experiences.</p>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <div class="projects-cta reveal-up">
+        <a href="https://github.com/Amadi611" class="btn btn-outline" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> See all on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TIMELINE — Education & Experience
+  ============================================================ -->
+  <section class="section section-dark" id="timeline">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// my_journey</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+
+      <!-- Education timeline -->
+      <div class="timeline-panel active" id="education">
+        <div class="timeline">
+
+          <div class="tl-item reveal-left">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2022 — Present</span>
+              <h3>Bachelor of Information Technology (Hons)</h3>
+              <h4>University of Ruhuna, Sri Lanka</h4>
+              <p>Final-year Bachelor of Information Technology (Hons) undergraduate at the University of Ruhuna with a current GPA of 3.09/4.00.
+                 Developing strong knowledge in software engineering, full-stack web development, database management, networking, UI/UX design, and software quality assurance through academic coursework and practical projects.</p>
+              <div class="tl-tags">
+                <span> Information Technology</span>
+                <span>Statistic</span>
+                <span>English</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal-right">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2021</span>
+              <h3>G.C.E Advanced Level</h3>
+              <h4>G/Elakaka National School, Bentota</h4>
+              <p>Successfully completed the G.C.E. Advanced Level Examination in the Arts stream, 
+                achieving excellent academic results with A grades in Sinhala and History and a B grade in Geography.
+                 Obtained a Z-Score of 1.4729, demonstrating strong academic performance and analytical skills.</p>
+              <div class="tl-tags">
+                <span>Sinhala</span>
+                <span>History</span>
+                <span>Geography</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tl-item reveal-left">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <span class="tl-date">2018</span>
+              <h3>G.C.E Ordinary Level</h3>
+              <h4>G/Elakaka National School, Bentota</h4>
+              <p>Successfully completed the G.C.E. Ordinary Level Examination in 2018, achieving strong academic results with 4 A grades, 1 B grade, and 4 C grades. 
+                This accomplishment established a solid foundation in core subjects and prepared me for advanced studies</p>
+              <div class="tl-tags">
+                <span>4 A</span>
+                <span>1 B</span>
+                <span>4 C</span>
+                 
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATIONS SECTION
+  ============================================================ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// certifications</span>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+        <p class="section-desc">Courses and achievements I've earned.</p>
+      </div>
+
+       
+
+      <!-- Certifications grid -->
+      <div class="certifications-grid" id="certificationsGrid">
+
+        <!-- Cert 1 -->
+        <div class="cert-card reveal-up" data-category="programming" style="--delay:0.05s">
+          <div class="cert-image">
+            <img src="images/aws badge.png" alt="AWS Knowledge: Amazon Q Developer Fundamental certificate" />
+          </div>
+          <div class="cert-info">
+            <h3> AWS Knowledge: Amazon Q Developer Fundamental</h3>
+            <p class="cert-issuer">Amazon Web Services (AWS Skill Builder)</p>
+            <p class="cert-date">2026</p>
+            <span class="cert-tag programming">Cloud Computing</span>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card reveal-up" data-category="tools" style="--delay:0.1s">
+          <div class="cert-image">
+            <img src="images/aws.jpg" alt="Prompt Engineering with Amazon Q Developer certificate" />
+          </div>
+          <div class="cert-info">
+            <h3>Prompt Engineering with Amazon Q Developer</h3>
+            <p class="cert-issuer">Amazon Web Services (AWS Training & Certification)</p>
+            <p class="cert-date">April 25, 2026</p>
+            <span class="cert-tag tools">AWS Training</span>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card reveal-up" data-category="cloud" style="--delay:0.15s">
+          <div class="cert-image">
+            <img src="images/pm.jpg" alt="Foundations of Project Management certificate" />
+          </div>
+          <div class="cert-info">
+            <h3>Foundations of Project Management</h3>
+            <p class="cert-issuer">University of Moratuwa - CODL</p>
+            <p class="cert-date">2025</p>
+            <span class="cert-tag cloud">Project Management</span>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card reveal-up" data-category="programming" style="--delay:0.2s">
+          <div class="cert-image">
+            <img src="images/cyber security.jpg" alt="Introduction to Cyber Security certificate" />
+          </div>
+          <div class="cert-info">
+            <h3>Introduction to Cyber Security</h3>
+            <p class="cert-issuer">Simplilearn SkillUp</p>
+            <p class="cert-date">June 21, 2025</p>
+            <span class="cert-tag programming">Cybersecurity</span>
+          </div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-card reveal-up" data-category="achievement" style="--delay:0.25s">
+          <div class="cert-image">
+             <img src="images/agile.jpg" alt="Agile Project Management certificate" />
+          </div>
+          <div class="cert-info">
+            <h3>Agile Project Management</h3>
+            <p class="cert-issuer">HP Life Foundation</p>
+            <p class="cert-date">2024</p>
+            <span class="cert-tag achievement">Agile Project Management</span>
+          </div>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="cert-card reveal-up" data-category="fullstack" style="--delay:0.3s">
+          <div class="cert-image">
+              <img src="images/un.jpg" alt="Sustainable Development Practice(UNDP) certificate" />
+          </div>
+          <div class="cert-info">
+            <h3>Sustainable Development in Practice </h3>
+            <p class="cert-issuer">United Nations Institute for Training and Research</p>
+            <p class="cert-date">2024</p>
+            <span class="cert-tag fullstack">Sustainable Development Practice(UNDP)</span>
+          </div>
+        </div>
+
+      </div><!-- /certifications-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">// get_in_touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-desc">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact info cards -->
+        <div class="contact-info reveal-left">
+          <div class="contact-card">
+            <i class="fa fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:amadinethsarani611@gmail.com">amadinethsarani611@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa fa-phone-alt"></i>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:0767513042">+94 76 751 3042</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <i class="fa fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <span>Bentota, Sri Lanka</span>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://github.com/Amadi611"   class="social-btn" aria-label="GitHub"   target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/amadinethsarani" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact-form reveal-right" id="contactForm" action="contact.php" method="POST" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span>*</span></label>
+              <input type="text"  id="name"  name="name"  placeholder="Name"             required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span>*</span></label>
+              <input type="email" id="email" name="email" placeholder="email"     required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject <span>*</span></label>
+            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Interested In</label>
+            <select id="service" name="service">
+              <option value="">— Select a service —</option>
+              <option value="frontend">Frontend Development</option>
+              <option value="fullstack">Full-Stack Web Development</option>
+              <option value="wordpress">WordPress Development</option>
+              <option value="androidapp">Android App Development</option>
+              <option value="qa"> Software QA & Testing</option>
+              <option value="ui/ux">UI/UX Design</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span>*</span></label>
+            <textarea id="message" name="message" rows="5" placeholder=" Write your message here..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="honeypot" class="honeypot" tabindex="-1" autocomplete="off" />
+
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span class="btn-text"><i class="fa fa-paper-plane"></i> Send Message</span>
+            <span class="btn-loading" hidden><i class="fa fa-spinner fa-spin"></i> Sending…</span>
+          </button>
+
+          <!-- Success / error alert -->
+          <div class="form-alert" id="formAlert" hidden></div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">&lt;</span>AM<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Full-stack developer &amp; IT student building elegant digital experiences.</p>
+      </div>
+
+      <nav class="footer-nav">
+        <h4>Navigation</h4>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <a href="mailto:amadinethsarani611@gmail.com"><i class="fa fa-envelope"></i>amadinethsarani611@gmail.com</a>
+        <a href="tel:+94767513042"><i class="fa fa-phone-alt"></i> +94 76 751 3042</a>
+        <span><i class="fa fa-map-marker-alt"></i> Bentota, Sri Lanka</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear"></span> Amadi Navodya. Crafted with <i class="fa fa-heart" style="color:#a855f7"></i></p>
+      <div class="footer-social">
+        <a href="https://github.com/Amadi611"      aria-label="GitHub"   target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/amadinethsarani" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+         
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="script.js"></script>
+</body>
+</html>
